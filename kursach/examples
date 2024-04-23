@@ -1,0 +1,28 @@
+make && ./cw --mirror --axis x --left_up 250.200 --right_down 600.300
+make && ./cw --mirror --axis y --left_up 250.200 --right_down 600.300
+make && ./cw --mirror --axis x --left_up 250.200
+make && ./cw --mirror --axis x --right_down 600.300
+make && ./cw --mirror --axis y --right_down 600.300
+make && ./cw --mirror --axis t --left_up 250.200 --right_down 600.300
+make && ./cw --mirror --axis t --right_down 600.300
+make && ./cw --mirror --left_up 250.200 --right_down 600.300
+make && ./cw --mirror --axis x --left_up 250.200 --right_down 1100.1100
+make && ./cw --mirror --axis y --left_up 25c.200 --right_down 6a0.300
+
+make && ./cw --copy --left_up 250.200 --right_down 600.300 --dest_left_up 100.100
+make && ./cw --copy --left_up -10.200 --right_down 600.300 --dest_left_up 0.0
+make && ./cw --copy --left_up 250.200 --right_down 600.300 --dest_left_up 1000.1000
+make && ./cw --copy --right_down 600.300 --dest_left_up 100.100
+make && ./cw --copy --left_up 250.200 --dest_left_up 100.100
+make && ./cw --copy --left_up 250.200 --right_down 600.300
+
+./cw --color_replace --new_color 255.0.0
+./cw --color_replace --old_color 22.153.148
+./cw --color_replace --old_color 300.153.148 --new_color 255.0.0
+./cw --color_replace --old_color 22.300.148 --new_color 255.0.0
+./cw --color_replace --old_color 22.153.300 --new_color 255.0.0
+./cw --color_replace --old_color -1.153.148 --new_color 255.0.0
+./cw --color_replace --old_color 22.153_148 --new_color 255.0.0
+./cw --color_replace --old_color 22.153.148 --new_color 255.0.0
+
+./cw --mirror --left_up 225.10 --right_down 375.175 --axis y -i test_image.bmp
